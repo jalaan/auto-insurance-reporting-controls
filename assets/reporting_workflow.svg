@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+<rect width="1200" height="620" fill="#f4f7fb"/><rect width="1200" height="86" fill="#142b47"/>
+<g font-family="Arial,sans-serif"><text x="48" y="49" font-size="29" font-weight="700" fill="white">DATA LINEAGE &amp; CONTROL WORKFLOW</text><text x="48" y="72" font-size="14" fill="#bdd1e5">Simulated reporting pipeline • Traceability, exception ownership, reviewer handoff</text>
+<rect x="42" y="135" width="230" height="112" rx="15" fill="white" stroke="#adc4d8" stroke-width="2"/><text x="68" y="176" font-size="21" font-weight="700" fill="#173755">01 | Source data</text><text x="68" y="205" font-size="16" fill="#526881">Policies • Premiums</text><text x="68" y="227" font-size="16" fill="#526881">Claims • Ledger</text>
+<rect x="338" y="135" width="230" height="112" rx="15" fill="white" stroke="#adc4d8" stroke-width="2"/><text x="364" y="176" font-size="21" font-weight="700" fill="#173755">02 | Stage</text><text x="364" y="205" font-size="16" fill="#526881">Python extraction</text><text x="364" y="227" font-size="16" fill="#526881">SQLite tables</text>
+<rect x="634" y="135" width="230" height="112" rx="15" fill="white" stroke="#adc4d8" stroke-width="2"/><text x="660" y="176" font-size="21" font-weight="700" fill="#173755">03 | Validate</text><text x="660" y="205" font-size="16" fill="#526881">SQL joins + control</text><text x="660" y="227" font-size="16" fill="#526881">rules + checks</text>
+<rect x="930" y="135" width="230" height="112" rx="15" fill="white" stroke="#adc4d8" stroke-width="2"/><text x="956" y="176" font-size="21" font-weight="700" fill="#173755">04 | Report</text><text x="956" y="205" font-size="16" fill="#526881">Exception inventory</text><text x="956" y="227" font-size="16" fill="#526881">JSON summary</text>
+<path d="M272 190H328 M318 182l10 8-10 8 M568 190H624 M614 182l10 8-10 8 M864 190H920 M910 182l10 8-10 8" stroke="#397ba4" stroke-width="4" fill="none"/>
+<rect x="195" y="336" width="810" height="162" rx="16" fill="#fff8ec" stroke="#deb87c" stroke-width="2"/>
+<text x="238" y="376" font-size="24" font-weight="700" fill="#805117">05 | Human review and remediation</text>
+<text x="238" y="409" font-size="17" fill="#6f5d48">Investigate exceptions → Assign accountable source owner → Correct or explain</text>
+<text x="238" y="438" font-size="17" fill="#6f5d48">Recheck totals and rules → Document evidence → Seek authorized review</text>
+<text x="238" y="472" font-size="15" fill="#986e35">Review and filing approval are illustrative process stages, not implemented automation.</text>
+<path d="M1044 247V289H600V326 M592 316l8 10 8-10" stroke="#397ba4" stroke-width="4" fill="none"/>
+<text x="48" y="570" font-size="15" fill="#5e7185">Data governance: source definitions • rule catalog • reconciliation evidence • repeatable exception reporting</text>
+<text x="48" y="595" font-size="14" fill="#7d8c9b">Independent synthetic demonstration only — not official statutory or NAIC reporting</text></g></svg>
