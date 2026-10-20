@@ -1,0 +1,28 @@
+name: Auto Insurance Reporting Controls
+
+on:
+  push:
+    paths:
+      - 'src/**'
+      - 'sql/**'
+      - 'tests/**'
+      - '.github/workflows/reporting-controls.yml'
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'sql/**'
+      - 'tests/**'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test exception detection and reproducibility
+        run: python -m unittest discover -s tests -v
+      - name: Produce synthetic reporting controls output
+        run: python src/pipeline.py --output output
